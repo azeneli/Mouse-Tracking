@@ -1,1 +1,23 @@
 /* CURRENTLY IN: styles/main.css */
+
+
+/*  COLORS 
+*   #4EC094 
+*   #7bb7fa
+*   #D1625B
+*   #B33D40
+*   #507796
+*   #1E2E3E
+*/
+
+.background-wrapper {
+	width: 100%;
+	height: auto;
+	background-color: #7bb7fa;
+}
+
+.container {
+	width: 100%;
+	height: 600px;
+	background-color: #4EC094;
+}
