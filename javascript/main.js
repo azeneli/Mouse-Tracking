@@ -15,28 +15,29 @@
 	});	
 
 	// add event listerner to observe mouse move
-	document.addEventListener('touchmove', function(e) {
-    	e.preventDefault();
-    	mouseX = e.pageX;
-		mouseY = e.pageY;
-	}, false);
+	// document.addEventListener('touchmove', function(e) {
+ 	// e.preventDefault();
+ 	// mouseX = e.pageX;
+	// mouseY = e.pageY;
+	// console.log(mouseY, 'here');
+	// }, false);
 
-	function moveDiv(el, speed) {
-		var xp = 0
-			, yp = 0;
+	function moveEl(el, speed) {
+		var pointX = 0
+			, pointY = 0;
 
-		var loop = setInterval(function () {
-			xp += (mouseX - xp) / speed;
-			yp += (mouseY - yp) / speed;
+		var trackDiv = setInterval(function trackEl() {
+			pointX += (mouseX - pointX) / speed;
+			pointY += (mouseY - pointY) / speed;
 
 			$(el).css({
-					left:xp
-					, top:yp
+					left: pointX
+					, top: pointY
 			});
 		}, 30);
 	}
 
-	moveDiv( ".container__box", 30);
-
+	moveEl( ".js-track", 10);
 
 })();
+
