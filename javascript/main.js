@@ -31,13 +31,13 @@
 			pointY += (mouseY - pointY) / speed;
 
 			$(el).css({
-					left: pointX
-					, top: pointY
+				left: pointX
+				, top: pointY
 			});
 		}, 30);
 	}
 
-	moveEl( ".js-track", 10);
+	moveEl( ".js-track", 5);
 
 })();
 
