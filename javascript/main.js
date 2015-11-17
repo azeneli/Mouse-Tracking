@@ -2,11 +2,20 @@
 
 (function(){ // protect da scope
 
-	// temp variables to hold mouse x-y pos
+	
+	/**
+	 * @type {number}
+ 	 * @temp
+	 */
+	
 	var mouseX = 0	
 		, mouseY = 0;
 
-	// when mouse moves it assings coordinates to var(s)	
+	/**
+ 	* When mouse moves it assings coordinates to var(s)
+ 	* @param {callback} cb - The callback that handles the response.
+ 	*/
+ 
 	$(document).on('mousemove', function(e) {
 		mouseX = e.pageX;
 		mouseY = e.pageY;
@@ -21,6 +30,13 @@
 	// mouseY = e.pageY;
 	// console.log(mouseY, 'here');
 	// }, false);
+
+	/**
+	 *  @moveEl 
+	 *	@description - func move the pos of the el according to mouse position
+	 *	@para {el} - el that will be selected
+	 *	@para {speed} - speed at which the el will be moved 
+	 */
 
 	function moveEl(el, speed) {
 		var pointX = 0
