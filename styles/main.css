@@ -21,3 +21,12 @@
 	height: 600px;
 	background-color: #4EC094;
 }
+
+.container__box {
+	width: 10%;
+	height: 40px;
+    position: absolute;
+    background-color: #B33D40;
+    border-radius: 2%;
+    box-shadow: 0 0 5px rgba(255,255,255,0.8) inset;
+}
